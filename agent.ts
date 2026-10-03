@@ -19,12 +19,13 @@ const getWeather = new FunctionTool({
     parameters: z.object({
       city: z.string().describe('The name of the city for which to retrieve the weather report.'),
     }),
+ 
     execute: ({ city }) => {
-      if (city.toLowerCase() === 'new york') {
+      if (city.toLowerCase() === 'bengaluru') {
         return {
           status: 'success',
           report:
-            'The weather in New York is sunny with a temperature of 25 degrees Celsius (77 degrees Fahrenheit).',
+            'The weather in Bengaluru is sunny with a temperature of 25 degrees Celsius (77 degrees Fahrenheit). The humidity is 50% and the wind speed is 10 km/h.',  
         };
       } else {
         return {
@@ -36,7 +37,7 @@ const getWeather = new FunctionTool({
   });
 
 export const rootAgent = new LlmAgent({
-  name: 'hello_time_weather_agent',
+  name: 'hello_time_agent',
   model: 'gemini-flash-latest',
   description: 'Tells the current time and weather in a specified city.',
   instruction: `You are a helpful assistant that tells the current time and weather in a city.
