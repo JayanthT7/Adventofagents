@@ -1,6 +1,10 @@
 # Advent of Agents: Current Time Agent
 
-A dynamic AI assistant built using the Google Gemini [Agent Development Kit (ADK)](https://github.com) that tracks and reports accurate local time zones.
+A dynamic AI assistant built using the Google Gemini [Agent Development Kit (ADK)] that tracks and reports accurate local time zones.
+
+
+## Used resource of Google hands on Agent - Season 1
+https://adk.dev/tutorials/multi-tool-agent/#terminal-adk-run_1
 
 ## 🚀 Getting Started
 
@@ -10,7 +14,7 @@ Make sure you have Node.js installed on your system.
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com
+   git clone https://github.com/JayanthT7/Adventofagents
    cd Adventofagents
    ```
 2. Install dependencies:
